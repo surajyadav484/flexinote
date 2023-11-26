@@ -1,7 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "./(marketing)/_component/providers/theme-provider";
+import { ThemeProvider } from "../components/providers/theme-provider";
+import { ConvexClientProvider } from "@/components/providers/convex-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning>
+       <ConvexClientProvider>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -26,6 +28,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        </ConvexClientProvider>
       </body>
     </html>
   );
