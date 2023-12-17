@@ -25,7 +25,7 @@ const UserItem = () => {
               <AvatarImage src={user?.imageUrl} />
             </Avatar>
             <span className="text-start font-medium line-clamp-1">
-              {user?.fullName}&apos;s Flexinote
+              {user?.fullName}&apos;s Flexi note
             </span>
           </div>
           <ChevronsLeftRightIcon className="rotate-90 ml-2 text-muted-foreground h-4 w-4" />
@@ -43,14 +43,14 @@ const UserItem = () => {
           </p>
           <div className="flex items-center gap-x-2">
             <div className="rounded-md bg-secondary p-1">
-                <Avatar className="h-8 w-8">
-                    <AvatarImage src={user?.imageUrl} />
-                </Avatar>
+              <Avatar className="h-8 w-8">
+                <AvatarImage src={user?.imageUrl} />
+              </Avatar>
             </div>
             <div className="space-y-1">
-                <p className="text-sm line-clamp-1">
-                    {user?.fullName}&apos;s Flexinote
-                </p>
+              <p className="text-sm line-clamp-1">
+                {user?.fullName}&apos;s Flexi note
+              </p>
             </div>
           </div>
         </div>
